@@ -52,12 +52,14 @@ header {
 }
 
 header > div {
-  background-color: var(--cor-primaria);
+  background-color: #f5fffdaa;
+  border: 1px solid var(--cor-primaria);
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
   text-align: center;
-
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: 0.3s ease-in-out;
 }
 
@@ -66,7 +68,7 @@ header > div:hover {
 }
 
 header > div > a {
-  color: var(--cor-fundo);
+  color: var(--cor-primaria);
   text-decoration: none;
   font-weight: bold;
 }
