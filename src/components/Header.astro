@@ -10,3 +10,38 @@ import "../styles/global.css";
     <a href="/cardapio">Cardápio</a>
   </div>
 </header>
+
+<style>
+  header {
+    background-color: transparent;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    top: 10px;
+    position: sticky;
+    z-index: 99;
+  }
+
+  header > div {
+    background-color: #f5fffdaa;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: 0.3s ease-in-out;
+  }
+
+  header > div:hover {
+    box-shadow: 5px 5px 0px var(--cor-secundaria);
+  }
+
+  header > div > a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: bold;
+  }
+</style>

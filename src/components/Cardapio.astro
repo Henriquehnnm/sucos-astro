@@ -1,10 +1,14 @@
---- 
+---
 import "../styles/global.css";
---- 
+---
 
 <main>
   <section>
-    <h3 style="text-align: center; font-size: 40px; margin: 20px; background: linear-gradient(90deg, #ff6f7d, var(--cor-primaria)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Cardápio</h3>
+    <h3
+      style="text-align: center; font-size: 40px; margin: 20px; background: linear-gradient(90deg, #ff6f7d, var(--cor-primaria)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+    >
+      Cardápio
+    </h3>
     <div id="container">
       <div id="s1">
         <h4>Melancia Clássica</h4>
@@ -31,9 +35,80 @@ import "../styles/global.css";
       <div id="s6">
         <h4>Melancia XL (700ml)</h4>
         <p>
-          Melancia clássica mas em copo gigante. Pra matar a sede de vez. R$ 14,00
+          Melancia clássica mas em copo gigante. Pra matar a sede de vez. R$
+          14,00
         </p>
       </div>
     </div>
   </section>
 </main>
+
+<style>
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adiciona espaço entre os cards */
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card-suco {
+    background-color: var(--cor-primaria);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Largura fixa para padronização */
+    height: 250px; /* Altura fixa para padronização */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinha o conteúdo */
+    color: var(--cor-fundo);
+    transition: 0.3s ease-in-out;
+  }
+
+  .card-suco:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 0px var(--cor-secundaria);
+  }
+
+  .card-suco h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .card-suco p {
+    font-size: 16px;
+  }
+
+  /* Mantendo os IDs para compatibilidade com o HTML existente, 
+   mas aplicando os estilos da classe .card-suco */
+  #s1,
+  #s2,
+  #s3,
+  #s4,
+  #s5,
+  #s6 {
+    background-color: var(--cor-primaria);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Largura fixa para padronização */
+    height: 250px; /* Altura fixa para padronização */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinha o conteúdo */
+    color: var(--cor-fundo);
+    transition: transform 0.3s ease;
+    margin: 10px; /* Adicionado para espaçamento */
+    transition: 0.3s ease-in-out;
+  }
+
+  #s1:hover,
+  #s2:hover,
+  #s3:hover,
+  #s4:hover,
+  #s5:hover,
+  #s6:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 0px var(--cor-secundaria);
+  }
+</style>

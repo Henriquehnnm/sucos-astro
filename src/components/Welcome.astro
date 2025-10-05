@@ -39,3 +39,96 @@ import "../styles/global.css";
     </div>
   </div>
 </div>
+
+<style>
+  #title {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-block: 5rem;
+  }
+
+  #ftitle {
+    transform: translate(0, 0);
+  }
+
+  #ftitle img {
+    margin: 50px;
+    transform: translate(-0%, 10px);
+  }
+
+  #ftitle > h1 {
+    color: var(--cor-primaria);
+    font-size: 80px;
+    margin-bottom: 10px;
+  }
+
+  #ftitle > h2 {
+    font-size: 25px;
+    margin-bottom: 100px;
+    padding: 2px;
+  }
+
+  .fcont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }
+
+  .text-content {
+    max-width: 400px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #pbl > a {
+    background-color: var(--cor-primaria);
+    padding: 20px;
+    text-decoration: none;
+    color: var(--cor-fundo);
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+  }
+
+  #pbl > a:hover {
+    box-shadow: 5px 5px 0px var(--cor-secundaria);
+  }
+
+  @media (max-width: 768px) {
+    #ftitle > h1 {
+      font-size: 50px;
+    }
+
+    #ftitle > h2 {
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
+
+    .fcont {
+      flex-direction: column;
+      gap: 20px;
+      margin: 0 10px 0 10px;
+    }
+
+    .fcont img {
+      max-width: 300px;
+    }
+
+    .text-content {
+      text-align: center;
+      max-width: 90%;
+    }
+
+    #title {
+      padding-block: 2rem;
+    }
+  }
+</style>
