@@ -3,12 +3,8 @@ import "../styles/global.css";
 ---
 
 <header>
-  <div id="logo">
-    <a href="/">Astro Juice</a>
-  </div>
-  <div id="cards">
-    <a href="/cardapio">Cardápio</a>
-  </div>
+  <a href="/">Astro Juice</a>
+  <a href="/cardapio">Cardápio</a>
 </header>
 
 <style>
@@ -23,7 +19,7 @@ import "../styles/global.css";
     z-index: 99;
   }
 
-  header > div {
+  header > a {
     background-color: #f5fffdaa;
     border: 1px solid var(--cor-primaria);
     border-radius: 10px;
@@ -33,15 +29,12 @@ import "../styles/global.css";
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: 0.3s ease-in-out;
-  }
-
-  header > div:hover {
-    box-shadow: 5px 5px 0px var(--cor-secundaria);
-  }
-
-  header > div > a {
     color: var(--cor-primaria);
     text-decoration: none;
     font-weight: bold;
+  }
+
+  header > a:hover {
+    box-shadow: 5px 5px 0px var(--cor-secundaria);
   }
 </style>
