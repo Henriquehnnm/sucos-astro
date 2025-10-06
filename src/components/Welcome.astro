@@ -13,126 +13,172 @@ import "../styles/global.css";
       É isso. Mais nada.
     </h2>
 
-    <div class="fcont">
-      <Image src={melancia} alt="Melancia" width={350} />
-      <div class="text-content">
-        <p>
-          Nosso suco é feito com a polpa da melancia mais doce e suculenta,
-          selecionada diariamente para garantir o máximo de sabor e frescor. É a
-          simplicidade da fruta em sua forma mais pura, direto para o seu copo.
-        </p>
-      </div>
-    </div>
-    <div class="fcont">
-      <div class="text-content">
-        <p>
-          Cada gole é uma explosão refrescante que desperta os sentidos,
-          trazendo a sensação de morder uma melancia recém-colhida. Sem
-          aditivos, sem truques — apenas o sabor natural que a natureza oferece,
-          feito com carinho e servido com autenticidade.
-        </p>
-      </div>
-      <Image src={copo} alt="Melancia" width={350} />
-    </div>
-
     <div id="pbl">
       <a href="/cardapio">Ver Cardápio!</a>
     </div>
+
+    <div id="scroll">
+      <a href="#proxima-secao"> <i class="nf nf-fa-arrow_down"> </i> </a>
+
+      <div class="fcont" id="proxima-secao">
+        <Image src={melancia} alt="Fatia de melancia" width={350} />
+        <div class="text-content">
+          <p>
+            Nosso suco é feito com a polpa da melancia mais doce e suculenta,
+            selecionada diariamente para garantir o máximo de sabor e frescor. É
+            a simplicidade da fruta em sua forma mais pura, direto para o seu
+            copo.
+          </p>
+        </div>
+      </div>
+      <div class="fcont">
+        <div class="text-content">
+          <p>
+            Cada gole é uma explosão refrescante que desperta os sentidos,
+            trazendo a sensação de morder uma melancia recém-colhida. Sem
+            aditivos, sem truques — apenas o sabor natural que a natureza
+            oferece, feito com carinho e servido com autenticidade.
+          </p>
+        </div>
+        <Image src={copo} alt="Copo de suco de melancia" width={350} />
+      </div>
+    </div>
   </div>
-</div>
 
-<style>
-  #title {
-    margin-top: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-block: 5rem;
-  }
+  <style>
+    #title {
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-block: 5rem;
+    }
 
-  #ftitle {
-    transform: translate(0, 0);
-  }
+    #ftitle {
+      transform: translate(0, 0);
+    }
 
-  #ftitle img {
-    margin: 50px;
-    transform: translate(-0%, 10px);
-  }
+    #ftitle img {
+      margin: 50px;
+      transform: translate(-0%, 10px);
+    }
 
-  #ftitle > h1 {
-    color: var(--cor-primaria);
-    font-size: 80px;
-    margin-bottom: 10px;
-  }
-
-  #ftitle > h2 {
-    margin: 0 auto 100px auto;
-    max-width: 1000px;
-    font-size: 25px;
-    margin-bottom: 100px;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .fcont {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 50px;
-    margin-top: 50px;
-    margin-bottom: 35px;
-  }
-
-  .text-content {
-    max-width: 400px;
-    text-align: left;
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  #pbl > a {
-    background-color: var(--cor-primaria);
-    padding: 20px;
-    text-decoration: none;
-    color: var(--cor-fundo);
-    font-weight: bold;
-    border-radius: 10px;
-    transition: 0.3s ease-in-out;
-  }
-
-  #pbl > a:hover {
-    box-shadow: 5px 5px 0px var(--cor-secundaria);
-  }
-
-  @media (max-width: 768px) {
     #ftitle > h1 {
-      font-size: 50px;
+      color: var(--cor-primaria);
+      font-size: 80px;
+      margin-bottom: 10px;
     }
 
     #ftitle > h2 {
-      font-size: 20px;
-      margin-bottom: 50px;
+      margin: 0 auto 100px auto;
+      max-width: 1000px;
+      font-size: 25px;
+      margin-bottom: 90px;
+      padding: 10px;
+      text-align: center;
     }
 
     .fcont {
-      flex-direction: column;
-      gap: 20px;
-      margin: 0 10px 0 10px;
-    }
-
-    .fcont img {
-      max-width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 50px;
+      margin-top: 100px;
+      margin-bottom: 30px;
     }
 
     .text-content {
-      text-align: center;
-      max-width: 90%;
+      max-width: 400px;
+      text-align: left;
+      font-size: 20px;
+      font-weight: bold;
     }
 
-    #title {
-      padding-block: 2rem;
+    #pbl > a {
+      background-color: var(--cor-primaria);
+      padding: 20px;
+      text-decoration: none;
+      color: var(--cor-fundo);
+      font-weight: bold;
+      border-radius: 10px;
+      transition: 0.3s ease-in-out;
     }
-  }
-</style>
+
+    #pbl > a:hover {
+      box-shadow: 5px 5px 0px var(--cor-secundaria);
+    }
+
+    #scroll {
+      margin-top: 120px;
+    }
+
+    #scroll > a {
+      display: inline-block;
+      font-size: 50px;
+      text-decoration: none;
+      color: var(--cor-primaria);
+      text-align: center;
+      font-weight: bold;
+      animation: pulse-down 1.5s infinite;
+    }
+
+    @keyframes pulse-down {
+      0% {
+        opacity: 0.7;
+        /* Remova o translateX, use SOMENTE o translateY(0) */
+        transform: translateY(0);
+      }
+      50% {
+        opacity: 1;
+        /* Remova o translateX, use SOMENTE o translateY(10px) para o pulo */
+        transform: translateY(10px);
+      }
+      100% {
+        opacity: 0.7;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 889px) {
+      #scroll {
+        margin-top: 50px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      #ftitle > h1 {
+        font-size: 50px;
+      }
+
+      #ftitle > h2 {
+        font-size: 20px;
+        margin-bottom: 60px;
+      }
+
+      .fcont {
+        flex-direction: column;
+        gap: 20px;
+        margin: 0 10px 0 10px;
+      }
+
+      .fcont img {
+        max-width: 300px;
+      }
+
+      .text-content {
+        text-align: center;
+        max-width: 90%;
+      }
+
+      #title {
+        padding-block: 2rem;
+      }
+
+      #scroll {
+        margin-top: 100px;
+      }
+    }
+  </style>
+</div>
